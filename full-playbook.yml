@@ -1,0 +1,25 @@
+- hosts: localhost
+  roles:
+  - {
+		# please see https://galaxy.ansible.com/ocean/git/ for details
+		role: geerlingguy.git,
+		git_packages: ["git"],		
+		git_install_from_source: false,
+	}
+  - {
+		# please see https://galaxy.ansible.com/williamyeh/oracle-java/ for details		
+		role: williamyeh.oracle-java,
+		java_version: 8,
+		java_subversion: 102,
+		java_download_from_oracle: true,
+		java_install_jce: false,
+	}
+  - { 
+		# please see https://galaxy.ansible.com/gantsign/maven/ for details
+		role: gantsign.maven,
+		maven_version: '3.3.9',
+	}
+  - { 
+		# please see https://galaxy.ansible.com/caarlos0/eclipse/ for details
+		role: caarlos0.eclipse,
+	}

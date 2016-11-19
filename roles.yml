@@ -1,0 +1,8 @@
+#roles.yml set of roels we want to use in out ansible playbook
+
+# Install git from galaxy
+- src: geerlingguy.git
+- src: williamyeh.oracle-java
+- src: gantsign.maven
+- src: caarlos0.eclipse
+
