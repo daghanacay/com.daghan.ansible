@@ -15,9 +15,9 @@ localhost ansible_connection=local
 sudo ansible-galaxy install -r roles.yml
 
 4- Install all the, jvm, mvn, git, eclipse. please see the full-playbook.yml for details
-ansible-playbook full-playbook.yml
 
-sudo 
+sudo ansible-playbook full-playbook.yml
+ 
 
 # Trouble shooting
 
